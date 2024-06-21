@@ -22,7 +22,7 @@ public class CommandSetHome extends Command {
 		}
 
 		String username = commandSender.getName();
-		Position position = new Position((int) commandSender.getPlayer().x, (int) commandSender.getPlayer().y, (int) commandSender.getPlayer().z);
+		Position position = new Position((int) commandSender.getPlayer().x, (int) commandSender.getPlayer().y, (int) commandSender.getPlayer().z, commandSender.getPlayer().dimension);
 
 		Homes.addHome(username, homeName, position);
 

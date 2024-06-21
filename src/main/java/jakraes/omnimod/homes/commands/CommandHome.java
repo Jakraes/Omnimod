@@ -34,6 +34,7 @@ public class CommandHome extends Command {
 
 		EntityPlayerMP playerMP = (EntityPlayerMP) commandSender.getPlayer();
 
+		playerMP.mcServer.playerList.sendPlayerToOtherDimension(playerMP, position.dimension);
 		playerMP.playerNetServerHandler.teleport(position.x, position.y, position.z);
 
 		return true;
