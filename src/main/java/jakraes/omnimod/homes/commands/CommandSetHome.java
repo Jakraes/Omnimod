@@ -26,7 +26,7 @@ public class CommandSetHome extends Command {
 
 		Homes.addHome(username, homeName, position);
 
-		Omnimod.LOGGER.info("Setting home");
+		commandSender.sendMessage("Home set successfully");
 
 		return true;
 	}
