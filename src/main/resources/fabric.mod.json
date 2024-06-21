@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "omnimod",
+  "version": "${version}",
+
+  "name": "Omnimod",
+  "description": "A server utilities mod for Better Than Adventure!",
+  "authors": [
+    "Jakraes"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+	"icon": "icon.png",
+  "license": "CC0-1.0",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+			"jakraes.omnimod.Omnimod"
+    ],
+		"beforeGameStart": [
+			"jakraes.omnimod.Omnimod"
+		],
+		"afterGameStart": [
+			"jakraes.omnimod.Omnimod"
+		],
+		"beforeClientStart": [
+			"jakraes.omnimod.Omnimod"
+		],
+		"afterClientStart": [
+			"jakraes.omnimod.Omnimod"
+		]
+	},
+  "mixins": [
+		"omnimod.mixins.json"
+  ],
+
+  "depends": {
+		"minecraft": "~7.1",
+    "fabricloader": ">=0.15.5"
+  },
+  "suggests": {
+  }
+}
