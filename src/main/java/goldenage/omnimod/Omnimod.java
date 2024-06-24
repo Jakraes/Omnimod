@@ -1,14 +1,8 @@
-package jakraes.omnimod;
+package goldenage.omnimod;
 
-import jakraes.omnimod.homes.Homes;
+import goldenage.omnimod.homes.Homes;
 import net.fabricmc.api.ModInitializer;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.options.components.KeyBindingComponent;
-import net.minecraft.client.gui.options.components.OptionsCategory;
-import net.minecraft.client.gui.options.data.OptionsPages;
-import net.minecraft.core.net.packet.Packet;
 import net.minecraft.server.MinecraftServer;
-import org.apache.commons.math3.analysis.function.Min;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import turniplabs.halplibe.util.ClientStartEntrypoint;
@@ -56,7 +50,6 @@ public class Omnimod implements ModInitializer, GameStartEntrypoint, ClientStart
 			}
 		}
 
-		// Home json file stuff
 		Homes.setup();
 
 		LOGGER.info("Omnimod server initialized.");

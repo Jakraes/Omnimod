@@ -1,13 +1,11 @@
-package jakraes.omnimod.homes.commands;
+package goldenage.omnimod.homes.commands;
 
-import jakraes.omnimod.homes.Homes;
-import jakraes.omnimod.homes.PlayerHome;
-import jakraes.omnimod.utils.Position;
+import goldenage.omnimod.homes.Homes;
+import goldenage.omnimod.utils.Position;
 import net.minecraft.core.net.command.Command;
 import net.minecraft.core.net.command.CommandHandler;
 import net.minecraft.core.net.command.CommandSender;
 import net.minecraft.core.net.command.PlayerCommandSender;
-import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.entity.player.EntityPlayerMP;
 
 public class CommandHome extends Command {

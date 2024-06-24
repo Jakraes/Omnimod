@@ -1,8 +1,7 @@
-package jakraes.omnimod.homes.commands;
+package goldenage.omnimod.homes.commands;
 
-import jakraes.omnimod.Omnimod;
-import jakraes.omnimod.homes.Homes;
-import jakraes.omnimod.utils.Position;
+import goldenage.omnimod.homes.Homes;
+import goldenage.omnimod.utils.Position;
 import net.minecraft.core.net.command.Command;
 import net.minecraft.core.net.command.CommandHandler;
 import net.minecraft.core.net.command.CommandSender;

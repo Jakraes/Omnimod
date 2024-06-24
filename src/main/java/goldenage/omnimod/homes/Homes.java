@@ -1,9 +1,10 @@
-package jakraes.omnimod.homes;
+package goldenage.omnimod.homes;
 
-import jakraes.omnimod.Omnimod;
-import jakraes.omnimod.homes.commands.CommandHome;
-import jakraes.omnimod.homes.commands.CommandSetHome;
-import jakraes.omnimod.utils.Position;
+import goldenage.omnimod.Omnimod;
+import goldenage.omnimod.homes.commands.CommandDelHome;
+import goldenage.omnimod.homes.commands.CommandHome;
+import goldenage.omnimod.homes.commands.CommandSetHome;
+import goldenage.omnimod.utils.Position;
 import turniplabs.halplibe.helper.CommandHelper;
 
 import java.io.File;
@@ -27,7 +28,7 @@ public class Homes {
 		if (Files.notExists(homesFile)) {
 			Omnimod.LOGGER.info("Homes file not found - creating...");
 			try {
-				Files.createDirectory(homesFile);
+				Files.createFile(homesFile);
 				Omnimod.LOGGER.info("Created homes file");
 			} catch (IOException e) {
 				Omnimod.LOGGER.error("Failed to create homes file");
@@ -39,6 +40,7 @@ public class Homes {
 
 		CommandHelper.Server.createCommand(new CommandHome());
 		CommandHelper.Server.createCommand(new CommandSetHome());
+		CommandHelper.Server.createCommand(new CommandDelHome());
 	}
 
 	public static void load() {

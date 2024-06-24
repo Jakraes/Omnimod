@@ -1,6 +1,6 @@
-package jakraes.omnimod.utils;
+package goldenage.omnimod.utils;
 
-import jakraes.omnimod.homes.Homes;
+import goldenage.omnimod.homes.Homes;
 
 import java.io.FileNotFoundException;
 

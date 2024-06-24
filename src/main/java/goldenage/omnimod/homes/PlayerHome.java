@@ -1,9 +1,8 @@
-package jakraes.omnimod.homes;
+package goldenage.omnimod.homes;
 
 import com.google.gson.JsonObject;
-import jakraes.omnimod.utils.Position;
+import goldenage.omnimod.utils.Position;
 
-import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 

@@ -6,7 +6,9 @@
   "name": "Omnimod",
   "description": "A server utilities mod for Better Than Adventure!",
   "authors": [
-    "Jakraes"
+    "Bigjango",
+		"giligens",
+		"Jakraes"
   ],
   "contact": {
     "homepage": "",
@@ -19,19 +21,19 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-			"jakraes.omnimod.Omnimod"
+			"goldenage.omnimod.Omnimod"
     ],
 		"beforeGameStart": [
-			"jakraes.omnimod.Omnimod"
+			"goldenage.omnimod.Omnimod"
 		],
 		"afterGameStart": [
-			"jakraes.omnimod.Omnimod"
+			"goldenage.omnimod.Omnimod"
 		],
 		"beforeClientStart": [
-			"jakraes.omnimod.Omnimod"
+			"goldenage.omnimod.Omnimod"
 		],
 		"afterClientStart": [
-			"jakraes.omnimod.Omnimod"
+			"goldenage.omnimod.Omnimod"
 		]
 	},
   "mixins": [
